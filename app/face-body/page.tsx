@@ -5,6 +5,7 @@ import { CategoryPageLayout, type ProductReview } from "@/components/category-pa
 const products: ProductReview[] = [
   {
     id: 1,
+    slug: "braun-silk-epil-9",
     name: "Braun Silk-epil 9",
     brand: "Braun",
     price: "$119",
@@ -20,6 +21,7 @@ const products: ProductReview[] = [
   },
   {
     id: 2,
+    slug: "foreo-luna-4",
     name: "FOREO LUNA 4",
     brand: "FOREO",
     price: "$219",
@@ -35,6 +37,7 @@ const products: ProductReview[] = [
   },
   {
     id: 3,
+    slug: "panasonic-es-ed90",
     name: "Panasonic ES-ED90",
     brand: "Panasonic",
     price: "$79",
@@ -50,6 +53,7 @@ const products: ProductReview[] = [
   },
   {
     id: 4,
+    slug: "nuface-trinity-plus",
     name: "NuFACE Trinity+",
     brand: "NuFACE",
     price: "$339",
@@ -65,6 +69,7 @@ const products: ProductReview[] = [
   },
   {
     id: 5,
+    slug: "conair-facial-steamer",
     name: "Conair Facial Steamer",
     brand: "Conair",
     price: "$29",
@@ -80,6 +85,7 @@ const products: ProductReview[] = [
   },
   {
     id: 6,
+    slug: "philips-lumea-ipl-9000",
     name: "Philips Lumea IPL 9000",
     brand: "Philips",
     price: "$469",
@@ -107,6 +113,7 @@ export default function FaceBodyPage() {
         accentColor="#9D50BB"
         lightBg="linear-gradient(135deg, #faf5ff 0%, #E0FFF7 100%)"
         products={products}
+        basePath="/face-body"
       />
       <Footer />
     </>
