@@ -5,11 +5,10 @@ import Link from "next/link"
 import { Menu, X, Zap } from "lucide-react"
 
 const navLinks = [
-  { label: "Hair Tech", href: "#hair-tech" },
-  { label: "Face & Body", href: "#face-body" },
-  { label: "Men's Grooming", href: "#mens" },
-  { label: "Travel Size", href: "#travel" },
-
+  { label: "Hair Tech", href: "/hair-tech" },
+  { label: "Face & Body", href: "/face-body" },
+  { label: "Men's Grooming", href: "/mens-grooming" },
+  { label: "Travel Size", href: "/travel-size" },
 ]
 
 export function Navbar() {
