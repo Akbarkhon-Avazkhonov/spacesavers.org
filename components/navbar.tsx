@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Face & Body", href: "#face-body" },
   { label: "Men's Grooming", href: "#mens" },
   { label: "Travel Size", href: "#travel" },
-  { label: "The Efficiency Blog", href: "#blog" },
+
 ]
 
 export function Navbar() {
