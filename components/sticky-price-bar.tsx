@@ -21,7 +21,6 @@ export function StickyPriceBar() {
       <div className="bg-[#333333]/95 backdrop-blur-md rounded-full shadow-2xl px-4 py-2.5 flex items-center gap-3 border border-white/10">
         <div className="hidden md:flex flex-col">
           <span className="text-white text-xs font-bold leading-tight">Dyson Supersonic</span>
-          <span className="text-[#D4AF37] text-xs font-semibold">$429 on Amazon</span>
         </div>
         <a
           href="#"
