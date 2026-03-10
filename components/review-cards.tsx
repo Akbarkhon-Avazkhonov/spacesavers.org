@@ -1,11 +1,13 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Star, ShoppingCart, BookOpen, Briefcase, Maximize2, Plug } from "lucide-react"
 
 const reviews = [
   {
     id: 1,
+    slug: "/hair-tech/dyson-supersonic",
     name: "Dyson Supersonic",
     category: "Hair Dryers",
     rating: 4.8,
@@ -21,6 +23,7 @@ const reviews = [
   },
   {
     id: 2,
+    slug: "/hair-tech/shark-flexstyle",
     name: "Shark FlexStyle",
     category: "Stylers",
     rating: 4.5,
@@ -36,6 +39,7 @@ const reviews = [
   },
   {
     id: 3,
+    slug: "/hair-tech/revlon-one-step",
     name: "Panasonic EH-NA65",
     category: "Hair Dryers",
     rating: 4.3,
@@ -159,10 +163,13 @@ export function ReviewCards() {
                       <ShoppingCart className="w-3.5 h-3.5" />
                       Buy on Amazon
                     </a>
-                    <button className="flex-1 flex items-center justify-center gap-1.5 bg-[#9D50BB]/10 hover:bg-[#9D50BB]/20 text-[#9D50BB] text-xs font-bold py-2.5 rounded-xl transition-colors">
+                    <Link
+                      href={review.slug}
+                      className="flex-1 flex items-center justify-center gap-1.5 bg-[#9D50BB]/10 hover:bg-[#9D50BB]/20 text-[#9D50BB] text-xs font-bold py-2.5 rounded-xl transition-colors"
+                    >
                       <BookOpen className="w-3.5 h-3.5" />
                       Read Truth
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
