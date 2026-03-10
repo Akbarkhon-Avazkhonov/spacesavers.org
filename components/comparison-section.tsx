@@ -105,7 +105,6 @@ export function ComparisonSection() {
               <h3 className="text-lg md:text-2xl font-extrabold text-[#2c4a7a]" style={{ fontFamily: "var(--font-heading)" }}>
                 Dyson Supersonic
               </h3>
-              <p className="text-[#2c4a7a]/60 text-sm mt-1">$429</p>
             </div>
           </div>
 
