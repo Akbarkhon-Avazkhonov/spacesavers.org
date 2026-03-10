@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Zap, Instagram, Twitter, Youtube } from "lucide-react"
 
 const footerLinks = {
-  Legal: ["Privacy Policy", "Affiliate Disclosure", "Terms of Use", "Contact Us"],
+  Legal: ["Privacy Policy", "Terms of Use", "Contact Us"],
 }
 
 export function Footer() {
