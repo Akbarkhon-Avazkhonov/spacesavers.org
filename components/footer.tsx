@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Zap, Instagram, Twitter, Youtube } from "lucide-react"
+import { Zap } from "lucide-react"
 
 const footerLinks = {
   Legal: ["Privacy Policy", "Terms of Use", "Contact Us"],
@@ -32,19 +32,7 @@ export function Footer() {
             <p className="text-xs text-white/30 leading-relaxed max-w-xs mb-5">
               <strong className="text-white/50">Amazon Affiliate Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.
             </p>
-            {/* Social */}
-            <div className="flex items-center gap-3">
-              {[Instagram, Twitter, Youtube].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#9D50BB]/40 flex items-center justify-center transition-colors"
-                  aria-label={`Social link ${i}`}
-                >
-                  <Icon className="w-3.5 h-3.5 text-white/60 hover:text-white" />
-                </a>
-              ))}
-            </div>
+
           </div>
 
           {/* Links */}
