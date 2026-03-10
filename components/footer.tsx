@@ -1,9 +1,16 @@
 import Link from "next/link"
 import { Zap } from "lucide-react"
 
-const footerLinks = {
-  Legal: ["Privacy Policy", "Terms of Use", "Contact Us"],
-}
+const footerLinks: { group: string; links: { label: string; href: string }[] }[] = [
+  {
+    group: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms of Use", href: "/terms-of-use" },
+      { label: "Contact Us", href: "/contact" },
+    ],
+  },
+]
 
 export function Footer() {
   return (
@@ -36,17 +43,17 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          {Object.entries(footerLinks).map(([group, links]) => (
+          {footerLinks.map(({ group, links }) => (
             <div key={group}>
               <h4 className="text-xs font-bold text-white/40 uppercase tracking-widest mb-4">{group}</h4>
               <ul className="space-y-2.5">
-                {links.map((link) => (
-                  <li key={link}>
+                {links.map(({ label, href }) => (
+                  <li key={label}>
                     <Link
-                      href="#"
+                      href={href}
                       className="text-sm text-white/60 hover:text-[#9D50BB] transition-colors"
                     >
-                      {link}
+                      {label}
                     </Link>
                   </li>
                 ))}
@@ -84,9 +91,9 @@ export function Footer() {
             SpaceSaversHub.com — Smart Tools. Better Routine. More Space.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-xs text-white/30 hover:text-white/60 transition-colors">Privacy</Link>
-            <Link href="#" className="text-xs text-white/30 hover:text-white/60 transition-colors">Terms</Link>
-            <Link href="#" className="text-xs text-white/30 hover:text-white/60 transition-colors">Disclosure</Link>
+            <Link href="/privacy-policy" className="text-xs text-white/30 hover:text-white/60 transition-colors">Privacy</Link>
+            <Link href="/terms-of-use" className="text-xs text-white/30 hover:text-white/60 transition-colors">Terms</Link>
+            <Link href="/contact" className="text-xs text-white/30 hover:text-white/60 transition-colors">Contact</Link>
           </div>
         </div>
       </div>
