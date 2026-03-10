@@ -5,6 +5,7 @@ import { CategoryPageLayout, type ProductReview } from "@/components/category-pa
 const products: ProductReview[] = [
   {
     id: 1,
+    slug: "dyson-supersonic",
     name: "Dyson Supersonic",
     brand: "Dyson",
     price: "$429",
@@ -20,6 +21,7 @@ const products: ProductReview[] = [
   },
   {
     id: 2,
+    slug: "shark-flexstyle",
     name: "Shark FlexStyle",
     brand: "Shark",
     price: "$229",
@@ -35,6 +37,7 @@ const products: ProductReview[] = [
   },
   {
     id: 3,
+    slug: "revlon-one-step",
     name: "Revlon One-Step",
     brand: "Revlon",
     price: "$39",
@@ -50,6 +53,7 @@ const products: ProductReview[] = [
   },
   {
     id: 4,
+    slug: "ghd-helios",
     name: "ghd Helios",
     brand: "ghd",
     price: "$279",
@@ -65,6 +69,7 @@ const products: ProductReview[] = [
   },
   {
     id: 5,
+    slug: "remington-damage-protection",
     name: "Remington Damage Protection",
     brand: "Remington",
     price: "$24",
@@ -80,6 +85,7 @@ const products: ProductReview[] = [
   },
   {
     id: 6,
+    slug: "t3-cura-luxe",
     name: "T3 Cura Luxe",
     brand: "T3",
     price: "$350",
@@ -107,6 +113,7 @@ export default function HairTechPage() {
         accentColor="#9D50BB"
         lightBg="linear-gradient(135deg, #f3e8ff 0%, #E0FFF7 100%)"
         products={products}
+        basePath="/hair-tech"
       />
       <Footer />
     </>

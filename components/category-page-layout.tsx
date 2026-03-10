@@ -1,9 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Star, ExternalLink, CheckCircle, XCircle } from "lucide-react"
+import { ArrowLeft, Star, CheckCircle, XCircle } from "lucide-react"
 
 export interface ProductReview {
   id: number
+  slug: string
   name: string
   brand: string
   price: string
@@ -26,6 +27,7 @@ interface CategoryPageLayoutProps {
   accentColor: string
   lightBg: string
   products: ProductReview[]
+  basePath: string
 }
 
 function StarRating({ rating }: { rating: number }) {
@@ -52,6 +54,7 @@ export function CategoryPageLayout({
   accentColor,
   lightBg,
   products,
+  basePath,
 }: CategoryPageLayoutProps) {
   return (
     <main className="min-h-screen bg-[#F5FEFA] font-sans">
@@ -168,15 +171,12 @@ export function CategoryPageLayout({
 
                 {/* CTA */}
                 <div className="mt-auto flex gap-2">
-                  <a
-                    href={product.amazonUrl}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="flex-1 flex items-center justify-center gap-1.5 bg-[#D4AF37] hover:bg-[#b8931f] text-white text-sm font-semibold py-2.5 rounded-xl transition-colors"
+                  <Link
+                    href={`${basePath}/${product.slug}`}
+                    className="flex-1 flex items-center justify-center gap-1.5 bg-[#9D50BB] hover:bg-[#8a3fa8] text-white text-sm font-semibold py-2.5 rounded-xl transition-colors"
                   >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    Buy on Amazon
-                  </a>
+                    View
+                  </Link>
                 </div>
               </div>
             </article>
