@@ -97,12 +97,11 @@ export function ComparisonSection() {
           onTouchEnd={() => { isDragging.current = false }}
         >
           {/* Product A — Cool tones */}
-          <div className="absolute inset-0 bg-[#dde8f5] flex flex-col items-center justify-center">
-            <div className="text-center px-8">
-              <div className="relative w-32 h-32 md:w-48 md:h-48 mx-auto mb-4">
-                <Image src="/images/dyson.jpg" alt="Dyson Supersonic" fill className="object-contain" sizes="200px" />
-              </div>
-              <h3 className="text-lg md:text-2xl font-extrabold text-[#2c4a7a]" style={{ fontFamily: "var(--font-heading)" }}>
+          <div className="absolute inset-0">
+            <Image src="/images/dyson.jpg" alt="Dyson Supersonic" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            <div className="absolute inset-0 bg-[#dde8f5]/50" />
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-base md:text-xl font-extrabold text-white drop-shadow-md" style={{ fontFamily: "var(--font-heading)" }}>
                 Dyson Supersonic
               </h3>
             </div>
@@ -110,17 +109,15 @@ export function ComparisonSection() {
 
           {/* Product B — Warm tones (clipped) */}
           <div
-            className="absolute inset-0 bg-[#fdf0e0] flex flex-col items-center justify-center"
+            className="absolute inset-0"
             style={{ clipPath: `inset(0 0 0 ${sliderPos}%)` }}
           >
-            <div className="text-center px-8">
-              <div className="relative w-32 h-32 md:w-48 md:h-48 mx-auto mb-4">
-                <Image src="/images/shark.jpg" alt="Shark FlexStyle" fill className="object-contain" sizes="200px" />
-              </div>
-              <h3 className="text-lg md:text-2xl font-extrabold text-[#7a4a10]" style={{ fontFamily: "var(--font-heading)" }}>
+            <Image src="/images/shark.jpg" alt="Shark FlexStyle" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            <div className="absolute inset-0 bg-[#fdf0e0]/50" />
+            <div className="absolute bottom-4 right-4 text-right">
+              <h3 className="text-base md:text-xl font-extrabold text-white drop-shadow-md" style={{ fontFamily: "var(--font-heading)" }}>
                 Shark FlexStyle
               </h3>
-              <p className="text-[#7a4a10]/60 text-sm mt-1">$229</p>
             </div>
           </div>
 
