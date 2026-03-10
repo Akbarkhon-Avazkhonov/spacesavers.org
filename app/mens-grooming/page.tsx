@@ -5,6 +5,7 @@ import { CategoryPageLayout, type ProductReview } from "@/components/category-pa
 const products: ProductReview[] = [
   {
     id: 1,
+    slug: "braun-series-9-pro",
     name: "Braun Series 9 Pro+",
     brand: "Braun",
     price: "$279",
@@ -20,6 +21,7 @@ const products: ProductReview[] = [
   },
   {
     id: 2,
+    slug: "philips-norelco-oneblade",
     name: "Philips Norelco OneBlade",
     brand: "Philips",
     price: "$49",
@@ -35,6 +37,7 @@ const products: ProductReview[] = [
   },
   {
     id: 3,
+    slug: "wahl-professional-5-star",
     name: "Wahl Professional 5-Star",
     brand: "Wahl",
     price: "$99",
@@ -50,6 +53,7 @@ const products: ProductReview[] = [
   },
   {
     id: 4,
+    slug: "panasonic-arc5",
     name: "Panasonic Arc5",
     brand: "Panasonic",
     price: "$199",
@@ -65,6 +69,7 @@ const products: ProductReview[] = [
   },
   {
     id: 5,
+    slug: "manscaped-lawn-mower-5",
     name: "Manscaped Lawn Mower 5.0",
     brand: "Manscaped",
     price: "$89",
@@ -80,6 +85,7 @@ const products: ProductReview[] = [
   },
   {
     id: 6,
+    slug: "gillette-heated-razor",
     name: "Gillette Heated Razor",
     brand: "Gillette",
     price: "$149",
@@ -107,6 +113,7 @@ export default function MensGroomingPage() {
         accentColor="#D4AF37"
         lightBg="linear-gradient(135deg, #1c1c1e 0%, #2d2d2d 100%)"
         products={products}
+        basePath="/mens-grooming"
       />
       <Footer />
     </>

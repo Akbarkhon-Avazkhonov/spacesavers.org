@@ -5,6 +5,7 @@ import { CategoryPageLayout, type ProductReview } from "@/components/category-pa
 const products: ProductReview[] = [
   {
     id: 1,
+    slug: "conair-1875w-folding",
     name: "Conair 1875W Folding",
     brand: "Conair",
     price: "$24",
@@ -20,6 +21,7 @@ const products: ProductReview[] = [
   },
   {
     id: 2,
+    slug: "ghd-unplugged-styler",
     name: "ghd Unplugged Styler",
     brand: "ghd",
     price: "$299",
@@ -35,6 +37,7 @@ const products: ProductReview[] = [
   },
   {
     id: 3,
+    slug: "remington-tstudio-silk",
     name: "Remington T|Studio Silk",
     brand: "Remington",
     price: "$49",
@@ -50,6 +53,7 @@ const products: ProductReview[] = [
   },
   {
     id: 4,
+    slug: "dyson-corrale",
     name: "Dyson Corrale",
     brand: "Dyson",
     price: "$499",
@@ -65,6 +69,7 @@ const products: ProductReview[] = [
   },
   {
     id: 5,
+    slug: "philips-travel-shaver-brl136",
     name: "Philips Travel Shaver BRL136",
     brand: "Philips",
     price: "$39",
@@ -80,6 +85,7 @@ const products: ProductReview[] = [
   },
   {
     id: 6,
+    slug: "tymo-ring-cordless",
     name: "TYMO Ring Cordless",
     brand: "TYMO",
     price: "$59",
@@ -107,6 +113,7 @@ export default function TravelSizePage() {
         accentColor="#0891b2"
         lightBg="linear-gradient(135deg, #e0f2fe 0%, #E0FFF7 100%)"
         products={products}
+        basePath="/travel-size"
       />
       <Footer />
     </>
