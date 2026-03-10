@@ -113,7 +113,7 @@ export function HeroBento() {
                 </div>
 
                 {/* Content */}
-                <div className="relative z-10 flex flex-col h-full justify-between">
+                <div className={`relative z-10 flex flex-col h-full ${item.id === 3 ? "justify-end gap-6" : "justify-between"}`}>
                   <div className="flex items-start justify-between">
                     <span className={`text-xs font-semibold px-2 py-1 rounded-full ${item.badgeClass}`}>
                       {item.category}
