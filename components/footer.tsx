@@ -2,8 +2,6 @@ import Link from "next/link"
 import { Zap, Instagram, Twitter, Youtube } from "lucide-react"
 
 const footerLinks = {
-  Categories: ["Hair Tech", "Face & Body", "Men's Grooming", "Travel Size"],
-  Resources: ["The Efficiency Blog", "Comparison Guides", "Buying Guides", "Brand Reviews"],
   Legal: ["Privacy Policy", "Affiliate Disclosure", "Terms of Use", "Contact Us"],
 }
 
@@ -17,7 +15,7 @@ export function Footer() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         {/* Top section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
