@@ -119,14 +119,11 @@ export function ReviewCards() {
 
                 {/* Content */}
                 <div className="p-5 flex flex-col flex-1">
-                  <div className="flex items-start justify-between mb-2">
-                    <div>
-                      <p className="text-xs text-[#9D50BB] font-semibold uppercase tracking-wide">{review.category}</p>
-                      <h3 className="text-lg font-bold text-[#333333] leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                        {review.name}
-                      </h3>
-                    </div>
-                    <span className="text-lg font-extrabold text-[#333333]">{review.price}</span>
+                  <div className="mb-2">
+                    <p className="text-xs text-[#9D50BB] font-semibold uppercase tracking-wide">{review.category}</p>
+                    <h3 className="text-lg font-bold text-[#333333] leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
+                      {review.name}
+                    </h3>
                   </div>
 
                   <StarRating rating={review.rating} />
