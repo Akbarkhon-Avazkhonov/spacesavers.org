@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowLeft, Mail, MessageSquare, Clock } from "lucide-react"
+import { ArrowLeft, Mail, MessageSquare, Clock, MapPin, Phone } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
           </p>
 
           {/* Info cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {[
               {
                 icon: Mail,
@@ -41,9 +41,9 @@ export default function ContactPage() {
                 text: "hello@spacesavershub.com",
               },
               {
-                icon: MessageSquare,
-                title: "Product Suggestions",
-                text: "Tell us what to review next",
+                icon: Phone,
+                title: "Phone",
+                text: "+1 814-494-9686",
               },
               {
                 icon: Clock,
@@ -66,6 +66,21 @@ export default function ContactPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Address card */}
+          <div className="bg-white border border-[#d4f0e8] rounded-2xl p-6 mb-12 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-[#9D50BB]/10 flex items-center justify-center shrink-0">
+              <MapPin className="w-5 h-5 text-[#9D50BB]" />
+            </div>
+            <div>
+              <p className="text-xs font-bold text-[#333333] uppercase tracking-wide mb-1">Our Address</p>
+              <p className="text-sm text-[#6b7280] leading-relaxed">
+                2937 Stutler Lane<br />
+                Johnstown, Pennsylvania 15904<br />
+                United States
+              </p>
+            </div>
           </div>
 
           {/* Contact form */}
