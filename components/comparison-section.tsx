@@ -5,13 +5,12 @@ import Image from "next/image"
 import { ChevronLeft, ChevronRight, Zap, ShoppingCart } from "lucide-react"
 
 const specRows = [
-  { label: "Motor Power", a: "1600W Digital", b: "1000W AC Motor" },
-  { label: "Weight", a: "1.9 lbs", b: "1.4 lbs" },
-  { label: "Drying Speed", a: "Ultra-fast (6 min)", b: "Fast (9 min)" },
-  { label: "Attachments", a: "5 magnetic", b: "3 standard" },
-  { label: "Price", a: "$429", b: "$229" },
-  { label: "Noise Level", a: "High (82dB)", b: "Moderate (76dB)" },
-  { label: "Travel-Friendly", a: "No (heavy)", b: "Yes (foldable)" },
+  { label: "Motor Power", a: "1600W digital motor", b: "1300W motor" },
+  { label: "Weight", a: "≈ 1.8 lbs", b: "≈ 1.5 lbs" },
+  { label: "Attachments", a: "5 magnetic styling tools", b: "Auto‑wrap curlers + brushes" },
+  { label: "Heat Settings", a: "4 heat / 3 airflow", b: "4 heat / 3 airflow" },
+  { label: "Special Tech", a: "Intelligent heat control", b: "Auto‑wrap curl technology" },
+  { label: "Price*", a: "Around $429", b: "Around $299" },
 ]
 
 const dealbreakers = [
@@ -77,7 +76,7 @@ export function ComparisonSection() {
           >
             Dyson Supersonic{" "}
             <span className="text-[#9D50BB]">vs</span>{" "}
-            Shark FlexStyle
+            Shark HD430 FlexStyle
           </h2>
           <p className="text-[#333333]/55 mt-3 max-w-md mx-auto leading-relaxed">
             Drag the slider to compare both products side by side.
@@ -87,7 +86,7 @@ export function ComparisonSection() {
         {/* Comparison Slider */}
         <div
           ref={containerRef}
-          className={`relative w-full h-72 md:h-96 rounded-2xl overflow-hidden cursor-col-resize shadow-lg select-none border border-[#d4f0e8] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          className={`relative w-full h-72 md:h-160 rounded-2xl overflow-hidden cursor-col-resize shadow-lg select-none border border-[#d4f0e8] transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           onMouseMove={handleMouseMove}
           onMouseDown={() => { isDragging.current = true }}
           onMouseUp={() => { isDragging.current = false }}
@@ -98,7 +97,13 @@ export function ComparisonSection() {
         >
           {/* Product A — Cool tones */}
           <div className="absolute inset-0">
-            <Image src="/images/dyson.jpg" alt="Dyson Supersonic" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image
+              src="https://m.media-amazon.com/images/I/71MJizsBJjL._SL1500_.jpg"
+              alt="Dyson Supersonic Intelligent attachments"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
             <div className="absolute inset-0 bg-[#dde8f5]/50" />
             <div className="absolute bottom-4 left-4">
               <h3 className="text-base md:text-xl font-extrabold text-white drop-shadow-md" style={{ fontFamily: "var(--font-heading)" }}>
@@ -112,7 +117,13 @@ export function ComparisonSection() {
             className="absolute inset-0"
             style={{ clipPath: `inset(0 0 0 ${sliderPos}%)` }}
           >
-            <Image src="/images/shark.jpg" alt="Shark FlexStyle" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+            <Image
+              src="https://www.southernliving.com/thmb/EQY94-3Bas4gYKMHu_sotIaQAHE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Shark-FlexStyle-Hair-Dryer-Multi-Styler-december-deal-617933af906b491aaea91343bd4d6e1e.jpg"
+              alt="Shark HD430 Multi-Styler"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
             <div className="absolute inset-0 bg-[#fdf0e0]/50" />
             <div className="absolute bottom-4 right-4 text-right">
               <h3 className="text-base md:text-xl font-extrabold text-white drop-shadow-md" style={{ fontFamily: "var(--font-heading)" }}>
@@ -185,7 +196,7 @@ export function ComparisonSection() {
         {/* Sticky hint */}
         <div className="mt-8 text-center">
           <a
-            href="#"
+            href="https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8"
             className="inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#b8931f] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors shadow-md"
           >
             <ShoppingCart className="w-4 h-4" />

@@ -17,7 +17,6 @@ export default function HomePage() {
       <ComparisonSection />
       <Footer />
       <CookieBanner />
-      <StickyPriceBar />
     </main>
   )
 }

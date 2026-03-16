@@ -16,7 +16,7 @@ const bentoItems = [
     bgClass: "bg-[#9D50BB]",
     textClass: "text-white",
     badgeClass: "bg-white/20 text-white",
-    href: "#hair-tech",
+    href: "hair-tech",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const bentoItems = [
     bgClass: "bg-[#333333]",
     textClass: "text-white",
     badgeClass: "bg-white/10 text-white",
-    href: "#travel",
+    href: "travel-size",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const bentoItems = [
     bgClass: "bg-[#E0FFF7]",
     textClass: "text-[#333333]",
     badgeClass: "bg-[#9D50BB]/10 text-[#9D50BB]",
-    href: "#face-body",
+    href: "face-body",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const bentoItems = [
     bgClass: "bg-[#D4AF37]",
     textClass: "text-white",
     badgeClass: "bg-white/20 text-white",
-    href: "#reviews",
+    href: "hair-tech",
   },
 ]
 

@@ -30,7 +30,7 @@ export function Footer() {
                 <Zap className="w-4 h-4 text-white" />
               </div>
               <span className="font-heading font-bold text-xl tracking-tight" style={{ fontFamily: "var(--font-heading)" }}>
-                SpaceSavers<span className="text-[#9D50BB]">Hub</span>
+                SpaceSavers<span className="text-[#9D50BB]">.org</span>
               </span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed max-w-xs mb-5">
@@ -85,10 +85,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/30">
-            © 2026 Space Savers Hub. All rights reserved.
+            © 2026 Space Savers Org. All rights reserved.
           </p>
           <p className="text-xs text-white/20 text-center">
-            SpaceSaversHub.com — Smart Tools. Better Routine. More Space.
+            SpaceSavers.org — Smart Tools. Better Routine. More Space.
           </p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="text-xs text-white/30 hover:text-white/60 transition-colors">Privacy</Link>

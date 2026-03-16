@@ -11,9 +11,8 @@ const montserrat = Montserrat_Alternates({
 })
 
 export const metadata: Metadata = {
-  title: 'SpaceSaversHub — Smart Tools. Better Routine. More Space.',
+  title: 'SpaceSavers.org — Smart Tools. Better Routine. More Space.',
   description: 'Independent, honest reviews of hair dryers, stylers, trimmers, and travel-size beauty appliances. We obsess over the millimeters so you don\'t have to.',
-  generator: 'v0.app',
   icons: {
     icon: '/favicon.jpg',
     apple: '/favicon.jpg',
@@ -29,7 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${outfit.variable} ${montserrat.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )

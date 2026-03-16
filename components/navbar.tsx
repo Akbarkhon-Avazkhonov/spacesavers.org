@@ -40,7 +40,7 @@ export function Navbar() {
               className="font-heading font-bold text-lg text-[#333333] tracking-tight"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              SpaceSavers<span className="text-[#9D50BB]">Hub</span>
+              SpaceSavers<span className="text-[#9D50BB]">.org</span>
             </span>
           </Link>
 
@@ -58,12 +58,7 @@ export function Navbar() {
           </nav>
 
           {/* CTA */}
-          <a
-            href="#reviews"
-            className="hidden md:inline-flex items-center gap-2 bg-[#D4AF37] hover:bg-[#b8931f] text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors shadow-md"
-          >
-            Top Picks
-          </a>
+
 
           {/* Mobile menu button */}
           <button
@@ -89,12 +84,6 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="#reviews"
-            className="inline-flex items-center justify-center bg-[#D4AF37] text-white text-sm font-semibold px-4 py-2 rounded-full mt-2 transition-colors"
-          >
-            Top Picks
-          </a>
         </div>
       )}
     </header>

@@ -23,7 +23,7 @@ export function StickyPriceBar() {
           <span className="text-white text-xs font-bold leading-tight">Dyson Supersonic</span>
         </div>
         <a
-          href="#"
+          href="https://www.amazon.com/Dyson-Supersonic-Intelligent-attachments-Concentrator/dp/B0F96N2BP8"
           className="flex items-center gap-1.5 bg-[#D4AF37] hover:bg-[#b8931f] text-white text-xs font-bold px-4 py-2 rounded-full transition-colors whitespace-nowrap"
         >
           <ShoppingCart className="w-3.5 h-3.5" />

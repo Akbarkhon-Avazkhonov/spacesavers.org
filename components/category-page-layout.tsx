@@ -118,7 +118,7 @@ export function CategoryPageLayout({
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
                 <span
                   className="absolute top-3 left-3 text-xs font-semibold px-2.5 py-1 rounded-full"
