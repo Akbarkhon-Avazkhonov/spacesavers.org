@@ -157,7 +157,7 @@ export function ReviewCards() {
                   {/* Buttons */}
                   <div className="flex gap-2 mt-4">
                     <a
-                      href={review.amazonUrl}
+                      href={review.amazonUrl + "?tag=spacesavers-20"}
                       className="flex-1 flex items-center justify-center gap-1.5 bg-[#D4AF37] hover:bg-[#b8931f] text-white text-xs font-bold py-2.5 rounded-xl transition-colors shadow-sm"
                     >
                       <ShoppingCart className="w-3.5 h-3.5" />

@@ -377,9 +377,7 @@ export default async function HairTechReviewPage({ params }: { params: Promise<{
             </div>
             <p className="text-[#333333] text-base leading-relaxed">{product.verdict}</p>
             <a
-              href={product.amazonUrl}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
+              href={product.amazonUrl + "?tag=spacesavers-20"}
               className="inline-flex items-center gap-2 bg-[#9D50BB] hover:bg-[#8a3fa8] text-white font-semibold px-6 py-3 rounded-xl transition-colors w-fit"
             >
               <ExternalLink className="w-4 h-4" />

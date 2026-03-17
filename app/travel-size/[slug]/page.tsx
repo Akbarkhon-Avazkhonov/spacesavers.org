@@ -242,9 +242,7 @@ export default async function TravelSizeReviewPage({
               </p>
 
               <a
-                href={product.amazonUrl}
-                target="_blank"
-                rel="noopener noreferrer nofollow"
+                href={product.amazonUrl + "?tag=spacesavers-20"}
                 className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-white font-bold py-3.5 px-8 rounded-2xl transition-colors w-fit"
               >
                 <ExternalLink className="w-4 h-4" />
